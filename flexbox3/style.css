@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body, .container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: ivory;
+}
+
+nav {
+    background-color: beige;
+    order: -1;
+}
+
+aside {
+    background-color: mintcream;
+}
+
+footer {
+    background-color: linen;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: row;
+        flex: 1;
+    }
+    main {
+        flex: 2;
+    }
+    aside, nav {
+        flex: 1;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div {
+            background-color: coral;
+            font-size: x-large;
+            width: 100px;
+            height: 100px;
+        }
+        @media (orientation: portrait) {
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+#grid {
+    display: grid;
+    height: 100vh;
+}
+
+#grid > div {
+    border: thin solid black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 400%;
+}
+
+@media (orientation: landscape) {
+    #grid {
+        grid-template-rows: repeat(2, 1fr) /* 2fr 2fr */;
+        grid-template-columns: repeat(3, 1fr) /* 1fr 1fr 1fr */;
+    }
+}
+
+@media (orientation: portrait) {
+    #grid {
+        grid-template-rows: repeat(3, 1fr) /* 1fr 1fr 1fr */;
+        grid-template-columns: repeat(2, 1fr) /* 2fr 2fr */;
+    }
+}
