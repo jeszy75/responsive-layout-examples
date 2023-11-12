@@ -8,8 +8,8 @@ body {
 }
 
 #grid > div {
-    border: thin solid black;
-    background-color: whitesmoke;
+    border: thin solid indigo;
+    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
