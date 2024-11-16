@@ -8,12 +8,12 @@ body {
 }
 
 #grid > div {
-    border: thin solid indigo;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+    border: thin solid indigo;
+    display: flex;
     font-size: 400%;
+    justify-content: center;
 }
 
 /* Extra small devices: */
@@ -21,15 +21,15 @@ body {
 /* Small devices: */
 @media (min-width: 576px) {
     #grid {
-        grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
 /* Medium or larger devices: */
 @media (min-width: 768px) {
     #grid {
-        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }

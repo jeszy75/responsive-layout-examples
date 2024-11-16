@@ -8,24 +8,24 @@ body {
 }
 
 #grid > div {
-    border: thin solid indigo;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+    border: thin solid indigo;
+    display: flex;
     font-size: 400%;
+    justify-content: center;
 }
 
 @media (orientation: landscape) {
     #grid {
-        grid-template-rows: repeat(2, 1fr) /* 1fr 1fr */;
         grid-template-columns: repeat(3, 1fr) /* 1fr 1fr 1fr */;
+        grid-template-rows: repeat(2, 1fr) /* 1fr 1fr */;
     }
 }
 
 @media (orientation: portrait) {
     #grid {
-        grid-template-rows: repeat(3, 1fr) /* 1fr 1fr 1fr */;
         grid-template-columns: repeat(2, 1fr) /* 1fr 1fr */;
+        grid-template-rows: repeat(3, 1fr) /* 1fr 1fr 1fr */;
     }
 }
