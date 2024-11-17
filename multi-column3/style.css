@@ -1,0 +1,33 @@
+#container {
+    background-color: whitesmoke;
+    column-gap: 2em;
+    column-rule: thin solid black;
+    columns: 1;
+    padding: 1em;
+}
+
+p {
+    background-color: snow;
+}
+
+img {
+    display: block;
+}
+
+div, img, p {
+    border: thin solid black;
+}
+
+/* Medium or larger devices: */
+@media (min-width: 768px) {
+    #container {
+        columns: 2;
+    }
+}
+
+/* Extra large or larger devices: */
+@media (min-width: 1200px) {
+    #container {
+        columns: 3;
+    }
+}
